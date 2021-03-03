@@ -25,7 +25,7 @@ class Conn
     private $host="localhost";
     private $usr="homestead";
     private $pwd="secret";
-    private $dbname="habitat";
+    private $dbname="inventarios";
         
     # @bool ,  Si conectado a la BD
     private $isConnected = false;
