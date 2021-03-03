@@ -21,6 +21,18 @@ class ProductController {
         $product = $this->product->getStockById($id);
         echo json_encode($product);
     }
+    
+    public function getWareHouseStock(){
+        $id = $_GET['id'];
+        $product = $this->product->getWareHouseStockById($id);
+        echo json_encode($product);
+    }
+    
+    public function saveSTock(){
+        $data = $_POST;
+        $success = $this->product->saveSTock($data);
+        echo json_encode(['success' => $success]);
+    }
 
 }
 
